@@ -47,7 +47,7 @@ function renderTable() {
 				var tempFahrenheit = (response.main.temp - 273.15) * 1.8 + 32;
 				var tempFahrenheitRound = Math.round(tempFahrenheit);
 				// Icon Image URL
-				var todayIcon = 'http://openweathermap.org/img/wn/' + response.weather[0].icon + '.png';
+				var todayIcon = 'https://openweathermap.org/img/wn/' + response.weather[0].icon + '.png';
 
 				//Set DOMS for current Day Weather except UV Index which requires seperate API
 				$('.currentDayForecastHeader').html(response.name + ', ' + moment().format('dddd, MMMM Do YYYY') + '    ' + '<img id="todayWeatherIcon" src=' + todayIcon + '></img>');
@@ -62,7 +62,7 @@ function renderTable() {
 				var longitude = response.coord.lon; //* Sets longitude as variable for second and third API calls
 
 				//* AJAX URL Variable for UV Index
-				var queryURLUV = 'http://api.openweathermap.org/data/2.5/uvi?appid=' + APIKey + '&lat=' + latitude + '&lon=' + longitude;
+				var queryURLUV = 'https://api.openweathermap.org/data/2.5/uvi?appid=' + APIKey + '&lat=' + latitude + '&lon=' + longitude;
 
 				//* AJAX to call new API for UV Index using Long & Lat
 				$.ajax({
@@ -86,7 +86,7 @@ function renderTable() {
 				});
 
 				//* AJAX URL Variable for 5 day Forecast
-				var queryURLFiveDay = 'http://api.openweathermap.org/data/2.5/forecast?appid=' + APIKey + '&lat=' + latitude + '&lon=' + longitude;
+				var queryURLFiveDay = 'https://api.openweathermap.org/data/2.5/forecast?appid=' + APIKey + '&lat=' + latitude + '&lon=' + longitude;
 
 				//* AJAX  to call new API for 5 day forecast
 				$.ajax({
