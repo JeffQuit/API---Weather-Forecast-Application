@@ -1,0 +1,76 @@
+Psuedocode - Weather App
+
+
+Assignment:
+Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+
+Use the OpenWeather API to retrieve weather data for cities. 
+The documentation includes a section called "How to start" that will provide basic setup and usage instructions. Use localStorage to store any persistent data.
+
+User Story:
+AS A traveler
+
+I WANT to see the weather outlook for multiple cities
+
+SO THAT I can plan a trip accordingly
+
+
+
+Technology:
+HTML
+CSS Framework - Bulma (https://bulma.io/) - Inspired by Piere's Project 1 Group, going to give Bulma a try
+
+
+Psuedo Code Notes:
+Nav Bar Header with Weather Dashboard Title
+Left Menu Panel with Searchbar at the top
+Below this, City Panel Cities searched buttons that store into local. Use method from Schedule project to store to local for each city using variable
+Center Content Container has today's Weather and 5 day forecast below it
+
+
+
+Psuedo Code Steps:
+
+1. Build HTML Template w/ CSS file and Jquery File 
+2. Add Folder for Images/ Assets
+3. Initalize with CDN Links 
+	a. Jquery Google CDN - <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	b. Font Awesome CDN
+	c. Moment.js CDN - Take from Schedule Application
+	d. Google Font - Titillium Web Font via Google
+	e. Bulma CDN - https://bulma.io/documentation/overview/start/
+4. Build Nav Bar w/ Bulma
+5. Build Left Nav Panel w/ Bulma, Maybe make it reactive and have it animate to pull left when hovered over. 
+6. Build Center Content Container 
+7. Build 5 day forcast under Center Content Container
+8. Initialize JS with API for Weather - Take API Key from Weather Activity
+9. Create functionality for Search Bar
+10. Create functionality for Searched Cities to be added to the recently searched cities table
+11. Create functionality for the Cities in the table to be searchable 
+	-Two ways to do this:
+		1. Set ID for onClick for both the table and Search Icon to be the same ID so it searches which on you click w/ the ID
+		2. Set functionality to add the city to the table first then pull up the data
+12. Create functionality for selected city to display today's weather in the center content container
+13. Create functionality for the 5 day forcaste to populate
+
+
+Issues:
+Need to convert City Name to Coordinates before you can access UV data
+1. User submits name of city
+2. City is logged to local array
+3. when clicked, city name is stored as data attribute and Long and Lat can be found in the standard OpenWeatherMap Object
+4. Long and Lad is then set as their own variables and ran again through openweather API to produce 5 day forecast, UV index, and general weather report for the day
+
+
+
+UV Index - Per Google
+0 to 2 - Low - Green
+3 to 5 - Yellow - moderate
+6 to 7 - Orange - high
+8 to 10 - red - very high
+11+ - violet - extreme
+
+
+
+
+

@@ -1,0 +1,195 @@
+body {
+	background-color: white;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+/* Navbar Background Gradient Generated via https://cssgradient.io/*/
+.navbar {
+	background: rgb(49, 100, 226);
+	background: linear-gradient(180deg, rgba(49, 100, 226, 1) 0%, rgba(0, 211, 255, 1) 68%, rgba(125, 233, 255, 1) 100%);
+	position: relative;
+	height: 60px;
+	margin-bottom: 60px;
+}
+
+#weatherDashLogo {
+	height: 60px;
+	float: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.contentContainer {
+	background-color: white;
+}
+
+.centerContentArea {
+	background-color: green;
+	height: 650px;
+}
+
+.leftSearchArea {
+	background-color: white;
+	height: 650px;
+	position: relative;
+}
+
+.LeftSearchAreaInside {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	box-shadow: 2px 2px 8px 2px #888888;
+	overflow-y: auto;
+}
+
+.rightWeatherArea {
+	background-color: white;
+	height: 650px;
+	position: relative;
+}
+
+.RightWeatherAreaInside {
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	margin: auto;
+	box-shadow: 2px 2px 8px 2px #888888;
+}
+
+.level-item {
+	position: absolute;
+	top: 65px;
+	left: 10px;
+}
+
+.table-container {
+	margin-top: 40px;
+	top: 80px;
+	position: relative;
+	left: 10px;
+	width: 90%;
+	overflow-y: auto;
+}
+
+.citySearchHeader {
+	font-size: 25px;
+	font-weight: 500;
+	position: relative;
+	top: 25px;
+	left: 12px;
+}
+
+.currentDayForecastDiv {
+	position: relative;
+	margin: auto;
+	height: 50%;
+	width: 92%;
+	border: 1px solid grey;
+	background-color: white;
+	top: 40px;
+	padding-top: 5px;
+	margin-bottom: 20px;
+}
+
+.currentDayForecastHeader {
+	font-weight: 600;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.fivedayForecastDiv {
+	position: relative;
+	margin: auto;
+	height: 38.5%;
+	width: 98%;
+
+	background-color: white;
+	top: 30px;
+}
+
+.fiveDayForecastHeader {
+	font-weight: 600;
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.currentDayTemp {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.currentDayHumid {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.currentDayWindSpeed {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.currentDayUV {
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+.fiveDayForcastDayBox {
+	position: relative;
+	background-color: white;
+	height: 70%;
+	width: 16%;
+	margin-left: 30px;
+	margin-top: 10px;
+	display: inline-block;
+	box-shadow: 2px 2px 8px 2px #888888;
+}
+
+#parentwrap {
+	vertical-align: top;
+}
+
+.fiveDayForcastDayBoxDate {
+	position: relative;
+	left: 10px;
+	margin-top: 5px;
+	font-weight: 600;
+}
+
+.fiveDayForcastDayBoxwIcon {
+	position: relative;
+	left: 10px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.fiveDayForcastDayBoxTemp {
+	position: relative;
+	left: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.fiveDayForcastDayBoxHumid {
+	position: relative;
+	left: 10px;
+}
+
+#todayWeatherIcon {
+	height: 5%;
+}
+
+.uvIndexBox {
+	display: inline-block;
+
+	color: white;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 5px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Weather Dashboard</title>
+		<!--Put CSS Links Below Here-->
+		<!--CSS Page Link -->
+
+		<!--Bulma CDN-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" />
+		<!--Font Awesome CDN-->
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+		<!--Google Font - Titillium Web CDN-->
+		<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!--Content Below-->
+
+		<!--Nav Bar Section-->
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a class="" href="#">
+					<img src="./Files/img/weatherapplogotransp.png" alt="Weather Dash Logo" id="weatherDashLogo" />
+				</a>
+
+				<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</a>
+			</div>
+		</nav>
+
+		<!--Content Section-->
+		<div class="contentContainer">
+			<div class="columns is-mobile">
+				<!-- Left Margin Blank Area-->
+				<div class="column is-1"></div>
+
+				<!--Center Content Area-->
+				<div class="column is-10 centerContentArea">
+					<div class="columns">
+						<!-- Left Search Bar and City Selection-->
+						<div class="column is-one-quarter leftSearchArea">
+							<div class="LeftSearchAreaInside">
+								<label class="citySearchHeader has-text-black" for="city-input">Search for a City:</label>
+								<div class="level-item">
+									<div class="field has-addons">
+										<p class="control"></p>
+											<input class="input" type="text" placeholder="Type City Name Here" size="21" id="city-input" />
+										
+											<button class="button clickCityDisplay" type="submit" id="add-city">
+												Search
+											</button>
+										</p>
+									</div>
+								</div>
+								<!--Table Area for Cities-->
+								<div class="table-container">
+									<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+										<thead>
+											<tr>
+												<th>City</th>
+											</tr>
+										</thead>
+										<tbody class="cityView">
+											<!--Render DOM Table here-->
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+
+						<!-- Center cntent for weather and 5 day forecast-->
+						<div class="column is-three-quarters rightWeatherArea">
+							<div class="RightWeatherAreaInside">
+								<!--Current Day Forecast-->
+								<div class="currentDayForecastDiv">
+									<h2 class="is-size-3 currentDayForecastHeader"></h2>
+									<p class="currentDayTemp"></p>
+									<p class="currentDayHumid"></p>
+									<p class="currentDayWindSpeed"></p>
+									<p class="currentDayUV"></p>
+								</div>
+
+								<!--5-day Forecast-->
+								<div class="fivedayForecastDiv">
+									<h2 class="is-size-4 fiveDayForecastHeader">5-Day Forecast</h2>
+									<div class="fiveDayForcastDayBox" id="parentwrap">
+										<p class="fiveDayForcastDayBoxDate fDay1Date"></p>
+										<p class="fiveDayForcastDayBoxwIcon fDay1Icon"></p>
+										<p class="fiveDayForcastDayBoxTemp fDay1Temp"></p>
+										<p class="fiveDayForcastDayBoxHumid fDay1Humid"></p>
+									</div>
+									<div class="fiveDayForcastDayBox" id="parentwrap">
+										<p class="fiveDayForcastDayBoxDate fDay2Date"></p>
+										<p class="fiveDayForcastDayBoxwIcon fDay2Icon"></p>
+										<p class="fiveDayForcastDayBoxTemp fDay2Temp"></p>
+										<p class="fiveDayForcastDayBoxHumid fDay2Humid"></p>
+									</div>
+									<div class="fiveDayForcastDayBox" id="parentwrap">
+										<p class="fiveDayForcastDayBoxDate fDay3Date"></p>
+										<p class="fiveDayForcastDayBoxwIcon fDay3Icon"></p>
+										<p class="fiveDayForcastDayBoxTemp fDay3Temp"></p>
+										<p class="fiveDayForcastDayBoxHumid fDay3Humid"></p>
+									</div>
+									<div class="fiveDayForcastDayBox" id="parentwrap">
+										<p class="fiveDayForcastDayBoxDate fDay4Date"></p>
+										<p class="fiveDayForcastDayBoxwIcon fDay4Icon"></p>
+										<p class="fiveDayForcastDayBoxTemp fDay4Temp"></p>
+										<p class="fiveDayForcastDayBoxHumid fDay4Humid"></p>
+									</div>
+									<div class="fiveDayForcastDayBox" id="parentwrap">
+										<p class="fiveDayForcastDayBoxDate fDay5Date"></p>
+										<p class="fiveDayForcastDayBoxwIcon fDay5Icon"></p>
+										<p class="fiveDayForcastDayBoxTemp fDay5Temp"></p>
+										<p class="fiveDayForcastDayBoxHumid fDay5Humid"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Right Margin Blank Area-->
+				<div class="column is-1"></div>
+			</div>
+		</div>
+
+		<!--Put Scripts Below Here-->
+		<!---->
+		<!--Jquery CDN-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<!--Moment.js CDN-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+		<!--Local Jquery JS file-->
+		<script src="./script.js"></script>
+	</body>
+</html>
