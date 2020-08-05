@@ -28,11 +28,11 @@ Psuedocode.txt - Psuedo code steps and thoughts/notes
 
 ## Installation:
 
-Access Index.html via the URL https://jeffquit.github.io/WeatherApp/ No additional steps necessary to navagate the website
+Access Index.html via the URL https://jeffquit.github.io/API---Weather-Forecast-Application/ No additional steps necessary to navagate the website
 
 ## Additional Links
 
-Github Repo Link: https://github.com/JeffQuit/WeatherApp
+Github Repo Link: https://github.com/JeffQuit/API---Weather-Forecast-Application
 
 ## Authors:
 
